@@ -56,8 +56,8 @@ list-style: none;
     justify-content: center;
 }
 .influencer{
-    height: 20vh;
-    width: 10vw;
+    height: 150px;
+    width: 150px;
     background-size: cover;
 }
 .facts{
@@ -134,7 +134,8 @@ list-style: none;
         width:100%;
     }
     .influencer{
-        width:20vw;
+        width:25vw;
+        height: 25vw;
     }
     .facts{
         width: 65vw;
