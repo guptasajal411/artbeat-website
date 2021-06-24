@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #000000;
+    color: #ffffff;
+}
+ul{
+    margin: 0;
+    padding: 0 5vw;
+    height: 7.5vh;
+    display: flex;    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size:20px;
+    font-family: 'Work Sans', sans-serif;
+}
+.navbarItem{
+list-style: none;
+}
+.banner{
+    background: url(https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 75vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.mainText{
+    text-align: center;
+    font-size:4rem;
+    font-family: 'Roboto Slab', serif;
+}
+.bannerParagraph{
+    padding:0 5vw;
+    border-radius: 10px;
+}
+
+.smallText{
+    text-align: center;
+    font-size:2rem;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #00000046;
+    padding: 2.5vh 2.5vw;
+    border-radius: 10px;
+}
+.influencerImages{
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    margin: 10vh auto 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.influencer{
+    height: 20vh;
+    width: 10vw;
+    background-size: cover;
+}
+.facts{
+    margin-top: 10vh;
+    width: 30vw;
+    margin: 7.5vh auto 0 auto;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.futureOfInfluencers p{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1.25vh 0;
+    
+}
+.button{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+.button button{
+    text-align: center;
+    width: 10vw;
+    height: 10vh;
+    margin: auto;
+    border: 0;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    font-size:1em;
+}
+.button button:hover{
+    cursor: pointer;
+    background-color:rgba(201, 201, 201, 0.712);
+}
+.questionSection{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(45deg, #FFDEE9 0%, #B5FFFC 100%);
+    
+
+    
+    
+    width: 100vw
+}
+.container{
+    height: 50vh;
+    width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+
+}
+.pollButtons{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.btn-poll{
+    border: 0;
+    border-radius: 0;
+    padding: 2.5vh 2.5vw;
+    transition-duration: 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+.btn-poll:hover{
+    cursor: pointer;
+    background-color:rgba(201, 201, 201, 0.712);
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 10px;
+    }
+  }
