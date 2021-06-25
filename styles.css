@@ -73,6 +73,10 @@ ul {
     padding: 1.25vh 0;
 }
 
+.bottomInfluencer{
+    padding-top: calc(var(--bs-gutter-x));
+}
+
 .button {
     width: 100vw;
     display: flex;
