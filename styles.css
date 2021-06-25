@@ -183,6 +183,10 @@ ion-icon:hover {
     margin: 0 auto;
 }
 
+.copyright {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .banner {
         height: 90vh;
