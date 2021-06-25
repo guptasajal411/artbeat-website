@@ -159,8 +159,15 @@ button a:active {
     width: 100%;
 }
 
-.footer {
+form{
     padding: 10vh 0;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 10vh 0 2vh 0;
+    background-color: #6830c3e3;
 }
 
 .container {
