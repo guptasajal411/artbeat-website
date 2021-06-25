@@ -73,7 +73,7 @@ ul {
     padding: 1.25vh 0;
 }
 
-.bottomInfluencer{
+.bottomInfluencer {
     padding-top: calc(var(--bs-gutter-x));
 }
 
@@ -154,26 +154,33 @@ button a:active {
     background-color: rgba(201, 201, 201, 0.712);
 }
 
-.brandLogo{
+.brandLogo {
     height: 100%;
     width: 100%;
 }
 
-ion-icon:hover{
+.footer {
+    padding: 10vh 0;
+}
+
+.container {
+    padding: 2vh 0;
+}
+
+ion-icon:hover {
     color: rgb(67, 67, 255);
     cursor: pointer;
 }
 
-.containerForSocialIcons{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-}
-
-.brandName{
+.brandName {
     font-family: 'Roboto Slab', serif;
     display: inline;
     float: right;
+}
+
+.supportContainer {
+    /* background-color:red; */
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -201,6 +208,3 @@ ion-icon:hover{
         font-size: 1rem;
     }
 }
-
-
-
