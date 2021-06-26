@@ -159,15 +159,76 @@ button a:active {
     width: 100%;
 }
 
-form{
+form {
     padding: 10vh 0;
     width: 60vw;
     margin: 0 auto;
 }
 
+.priceSection {
+    padding: 10vh 0;
+    background-color: #C490E4;
+}
+
+.serifFont {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.priceHeading {
+    padding-bottom: 2vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.getStartedButton {
+    padding: 1vw;
+}
+
+.priceContainer {
+    width: 70vw;
+    margin: 0 auto!important;
+}
+
+.card {
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 20px!important;
+    border: 1px solid #808080!important;
+}
+
+.card-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.pricePerMonth {
+    display: inline;
+    font-size: 3rem;
+}
+
+.priceMonthText {
+    display: inline;
+    vertical-align: baseline;
+}
+
+.greyText {
+    color: #808080;
+}
+
+.textForInfo {
+    display: inline;
+    font-weight: bold;
+}
+
+.greyTextForInfo {
+    display: inline;
+    color: #808080;
+}
+
 .footer {
     padding: 10vh 0 2vh 0;
-    background-color: #6830c3e3;
 }
 
 .container {
