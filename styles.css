@@ -186,7 +186,7 @@ form {
 }
 
 .priceContainer {
-    width: 70vw;
+    width: 70vw!important;
     margin: 0 auto!important;
 }
 
@@ -278,5 +278,38 @@ ion-icon:hover {
     }
     .smallText {
         font-size: 1rem;
+    }
+}
+@media (max-width: 992px) {
+    .priceContainer {
+        width: 100vw!important;
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .hidden{
+        display: none !important;
+    }
+    .justify-content-evenly{
+        width: 100vw!important;
+        margin: 0!important;
+    }
+    br{
+        display: none;
+    }
+    .hiddenHr{
+        display: none;
+    }
+    .pricePerMonth{
+        font-size:2rem;
+    }
+    .card{
+        padding: 0!important;
+    }
+    .card-title{
+        font-size:1rem;
+    }
+    .savingText{
+        font-size:0.75rem;
+        margin: 0!important;
     }
 }
