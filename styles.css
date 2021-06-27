@@ -7,15 +7,12 @@ body {
     width: 10vh;
 }
 
-.banner:before{
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    height: 75vh; width: 100%;
-    z-index: -1;
-    /* opacity: 50%; */
-    /* filter: grayscale(100%); */
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url(bg.jpg) no-repeat center center/cover;
+
 }
 
 .banner {
@@ -326,6 +323,7 @@ ion-icon:hover {
     }
     .smallText {
         font-size: 1rem;
+        padding: 0 2.5rem;
     }
     .bottomInfluencer {
         padding-top: calc(var(--bs-gutter-x));
