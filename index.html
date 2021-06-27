@@ -18,9 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link rel="icon"
-        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/285/camera_1f4f7.png">
-    <title>The Visual Cinema</title>
+    <link rel="icon" href="brandLogo.png">
+    <title>Artbeat</title>
 </head>
 
 <body>
@@ -39,9 +38,9 @@
                     <div class="navbar-nav ml-auto">
 
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Product</a>
-                        <a class="nav-link" href="#">Price</a>
-                        <a class="nav-link " href="#">Contact Us</a>
+                        <a class="nav-link" href="#prices">Product</a>
+                        <a class="nav-link" href="#prices">Price</a>
+                        <a class="nav-link" href="#">Contact Us - thevisualcinemaofficial@gmail.com</a>
 
                     </div>
                 </div>
@@ -98,7 +97,7 @@
         <div class="button">
             <button>
                 <a href="#studioForm">
-                    Studio Hire
+                    Book my slot
                 </a>
             </button>
         </div>
@@ -106,21 +105,17 @@
     <div class="bottomContainer">
         <div class="container" id="bottom">
             <div class="row">
-                <div class="col-xl-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, magnam animi? Impedit
-                        exercitationem
-                        saepe vitae! Reprehenderit laborum provident quam ea.
-                    </p>
+                <div class="col-xl-12 text-center">
+                    <h3 class="font">Do you dream to be paid from larger platform like IG, YT and FB for your videos?
+                    </h3>
                     <div class="pollButtons">
                         <button class="btn-poll yes question-1" id="question-1-yes">Yes</button>
                         <button class="btn-poll no question-1" id="question-1-no">No</button>
                     </div>
                 </div>
-                <div class="col-xl-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis sint, praesentium
-                        quaerat
-                        error incidunt animi accusamus delectus dolores labore.
-                    </p>
+                <div class="col-xl-12 text-center">
+                    <h3 class="font"> Do you like to have your cinematic intro and video from professionals?
+                    </h3>
                     <div class="pollButtons">
                         <button class="btn-poll yes question-2" id="question-2-yes">Yes</button>
                         <button class="btn-poll no question-2" id="question-2-no">No</button>
@@ -129,37 +124,37 @@
             </div>
         </div>
     </div>
-    <form class="form-position-center" action="thevisualcinemaofficial@gmail.com?subject=Testing 01: CReel "
-        method="post" enctype="text/plain">
+    <form class="form-position-center" action="mailto:thevisualcinemaofficial@gmail.com?subject=Testing 01: CReel "
+        method="post" enctype="text/plain" id="studioForm">
         </div>
         <div class="upperForm">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input type="text" class="form-control">
+                <input name="Name" type="text" placeholder="Your Name" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">E-Mail</label>
-                <input type="password" class="form-control">
+                <input name="E-mail" type="" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Mob-No</label>
-                <input type="number" class="form-control">
+                <input name="Mob-No" type="number" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Choose your city</label>
-                <select class="form-select" aria-label="Default select example">
+                <select name="City-name" class="form-select" aria-label="Default select example" required>
                     <option selected>your city</option>
-                    <option value="1">Delhi</option>
-                    <option value="2">Patna</option>
-                    <option value="3">Gaya</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Gaya">Gaya</option>
                 </select>
             </div>
             <br>
         </div>
-        <div class="text-center">
+        <div class="text-center" id="prices">
             <div class="row row-cols-3 g-0 g-md-5 priceRow">
-                <div class="firstCard col">
-                    <div class="card h-100 ">
+                <div class=" col">
+                    <div class="card firstCard h-100 ">
                         <div class="whiteSpace hidden">
                             <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
                             <p class="greenText">Save 40%</p>
@@ -179,7 +174,9 @@
                         </div>
                         <div class="card-body"></div>
                         <div class="text-center card-footer">
-                            <input type="checkbox" class="form-check-input firstCheckbox" id="exampleCheck1"> Creator Badge
+                            <input name="Creator Badge"
+                            type="checkbox" class="form-check-input firstCheckbox" id="exampleCheck1"> Creator
+                            Package
                         </div>
                     </div>
                 </div>
@@ -189,10 +186,10 @@
                             <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
                             <p class="greenText">Save 40%</p>
                         </div>
-                        <h1 class="price"><strike>Rs. 5049/-</strike></h1>
                         <h1 class="price">
-                            2999
+                            Rs. 2999/-
                         </h1>
+                        <h3 class="strike"><strike>5049</strike></h3>
                         <img src="influencerOpBadge.png" class="card-img-top influencerBadgeImg" alt="...">
                         <hr>
                         <div class="perks text-start">
@@ -203,7 +200,9 @@
                         </div>
                         <div class="card-body"></div>
                         <div class="text-center card-footer">
-                            <input type="checkbox" class="form-check-input secondCheckbox" id="exampleCheck1"> Influencer OP' Badge
+                            <input name="Influencer OP' Badge"
+                            type="checkbox" class="form-check-input secondCheckbox" id="exampleCheck1">
+                            Influencer OP' Package
                         </div>
                     </div>
                 </div>
@@ -223,15 +222,41 @@
                             <li>1 Cinematic Video</li>
                         </div>
                         <div class="card-body"></div>
-                        <div class="text-center card-footer">
-                            <input type="checkbox" class="form-check-input thirdCheckbox" id="exampleCheck1"> Star Badge
+                        <div class="text-center card-footer firstFooter">
+                            <input name="Star Badge"
+                            type="checkbox" class="form-check-input thirdCheckbox" id="exampleCheck1"> Star
+                            Package
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="myButton">Submit</a>
+            <!-- <button type="button" class="myButton">Submit</button> -->
+            <button type="submit" class="btn btn-primary buttonn">Submit</button>
         </div>
     </form>
+    <div class="brandPromo">
+        <h1 class="text-center whiteText">
+            We have worked with
+        </h1>
+        <div class="container">
+            <div class="row text-center justify-content-between ">
+                <div class="col-2 flexForBrandImg">
+                    <img src="https://cdn.shopify.com/s/files/1/0522/7020/3059/collections/pink-woolf.png?v=1615201091" alt="" class="brandImg "></div>
+                <div class="col-2 flexForBrandImg">
+                    <img src="tvcLogo.png" alt="" class="brandImgZee">
+                </div>
+                <div class="col-2 flexForBrandImg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1280px-Amazon_Prime_Logo.svg.png" alt="" class="brandImg ">
+                </div>
+                <div class="col-2 flexForBrandImg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/MX_Player_Logo.png/1920px-MX_Player_Logo.png" alt="" class="brandImg ">
+                </div>
+                <div class="col-2 flexForBrandImg">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Zee_entertainment_enterprises_logo.svg" alt="" class="brandImgZee ">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="row">

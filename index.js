@@ -27,6 +27,45 @@ $(".question-2").click(function(){
 })
 
 $(".firstCheckbox").click(function () {
-    $(".firstCard").css("border", "5px solid red!important");
-    console.log("tru hai ji");
+    if($(".firstCheckbox").is(":checked")){
+        $(".firstCard").css("border", "5px solid #0C63E4");
+        $(".secondCard").css("border", "0");
+        $(".thirdCard").css("border", "0");
+        $(".secondCheckbox").prop("checked",false);
+        $(".thirdCheckbox").prop("checked",false);
+        console.log("checked")
+    }
+    else{
+        $(".firstCard").css("border", "0");
+
+    }
 })
+$(".secondCheckbox").click(function () {
+    if($(".secondCheckbox").is(":checked")){
+        $(".secondCard").css("border", "5px solid #0C63E4");
+        $(".thirdCard").css("border", "0");
+        $(".firstCard").css("border", "0");
+        $(".firstCheckbox").prop("checked",false);
+        $(".thirdCheckbox").prop("checked",false);
+        console.log("checked")
+    }
+    else{
+        $(".secondCard").css("border", "0");
+
+    }
+})
+$(".thirdCheckbox").click(function () {
+    
+    if($(".thirdCheckbox").is(":checked")){
+        $(".thirdCard").css("border", "5px solid #0C63E4");
+        $(".firstCard").css("border", "0");
+        $(".secondCard").css("border", "0");
+        $(".firstCheckbox").prop("checked",false);
+        $(".secondCheckbox").prop("checked",false);
+        console.log("checked")
+    }
+    else{
+        $(".thirdCard").css("border", "0");
+    }
+})
+
