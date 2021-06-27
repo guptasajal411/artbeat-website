@@ -186,6 +186,7 @@ form {
     width: 60vw;
     margin: 0 auto!important;
     font-family: 'Julius Sans One', sans-serif;
+    padding: 0 0 10vh 0;
 }
 
 .whiteSpace{
@@ -230,10 +231,39 @@ form {
     transition: transform 0.3s;
 }
 
-.card:hover{
+.firstCard{
+
     /* border: 5px solid red!important; */
+}
+
+.card:hover{
     transform: scale(1.05)
 }
+
+.myButton {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+    color:white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 
 

@@ -25,3 +25,8 @@ $(".question-2").click(function(){
     $("#question-2-no").css("border-top-right-radius", "5px");
     $("#question-2-no").css("border-bottom-right-radius", "5px");
 })
+
+$(".firstCheckbox").click(function () {
+    $(".firstCard").css("border", "5px solid red!important");
+    console.log("tru hai ji");
+})
