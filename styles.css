@@ -226,12 +226,13 @@ form {
 }
 
 .card{
-    transition: transform 0.3s;
     /* transition: border 0.3s; */
+    transition: transform 0.3s;
 }
 
 .card:hover{
     /* border: 5px solid red!important; */
+    transform: scale(1.05)
 }
 
 
