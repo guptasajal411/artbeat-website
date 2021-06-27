@@ -3,24 +3,8 @@ body {
     padding: 0;
 }
 
-.navbar {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-ul {
-    margin: 0;
-    padding: 0 5vw;
-    height: 7.5vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    font-family: 'Julius Sans One', sans-serif;}
-
-.navbarItem {
-    list-style: none;
+.logo{
+    width: 10vh;
 }
 
 .banner:before{
@@ -46,7 +30,6 @@ ul {
 
 .newRow{
     background-color: #00000046;
-
 }
 
 .mainText {
