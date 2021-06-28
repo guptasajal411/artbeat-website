@@ -25,10 +25,6 @@ body {
     align-items: center;
 }
 
-.newRow{
-    background-color: #00000046;
-}
-
 .mainText {
     text-align: center;
     font-size: 4rem;
@@ -173,10 +169,6 @@ form {
     color:white;
 }
 
-.formContainer{
-    width: 100vh!important;
-}
-
 .brandPromo{
     padding: 20vh 0;
     width: 100vw!important;
@@ -186,11 +178,6 @@ form {
 .whiteText{
     color: white;
     font-family: 'Julius Sans One', sans-serif;
-}
-
-.raw{
-    background-color: #00000046;
-    border-radius: 10px;
 }
 
 .brandImg{
@@ -319,11 +306,6 @@ form {
 ion-icon:hover {
     color: rgb(67, 67, 255);
     cursor: pointer;
-}
-
-.brandName {
-    font-family: 'Julius Sans One', sans-serif;    display: inline;
-    float: right;
 }
 
 .supportContainer {
