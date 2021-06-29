@@ -1,4 +1,4 @@
-$(".question-1").click(function(){
+$(".question-1").click(function () {
     $("#question-1-yes").css("padding-right", "5vw");
     $("#question-1-yes").css("background-color", "#5cb85c");
     $("#question-1-no").css("padding-left", "0.5vw");
@@ -12,7 +12,7 @@ $(".question-1").click(function(){
     $("#question-1-no").css("border-bottom-right-radius", "5px");
 })
 
-$(".question-2").click(function(){
+$(".question-2").click(function () {
     $("#question-2-yes").css("padding-right", "4.5vw");
     $("#question-2-yes").css("background-color", "#5cb85c");
     $("#question-2-no").css("padding-left", "0.5vw");

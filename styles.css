@@ -3,16 +3,15 @@ body {
     padding: 0;
 }
 
-.logo{
+.logo {
     width: 10vh;
 }
 
-.flexbox{
+.flexbox {
     display: flex;
     align-items: center;
     justify-content: center;
     background: url(bg.jpg) no-repeat center center/cover;
-
 }
 
 .banner {
@@ -35,7 +34,7 @@ body {
 .smallText {
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Julius Sans One', sans-serif;    
+    font-family: 'Julius Sans One', sans-serif;
     background-color: #00000046;
     padding: 2.5vh 2.5vw;
     border-radius: 10px;
@@ -55,7 +54,8 @@ body {
     margin-top: 10vh;
     width: 70vw;
     margin: 7.5vh auto 0 auto;
-    font-family: 'Julius Sans One', sans-serif;}
+    font-family: 'Julius Sans One', sans-serif;
+}
 
 .futureOfInfluencers p {
     text-align: center;
@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     padding-bottom: 10vh;
-    justify-content:center!important;
+    justify-content: center!important;
 }
 
 .button button {
@@ -108,17 +108,15 @@ button a:active {
 .bottomContainer {
     padding-top: 10vh;
     background-color: #FBDA61;
-background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
-.font{
+.font {
     font-family: 'Julius Sans One', sans-serif;
-
 }
 
-.link-dark{
-    text-decoration:none;
+.link-dark {
+    text-decoration: none;
 }
 
 #bottom {
@@ -144,7 +142,8 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     border-radius: 0;
     padding: 2.5vh 2.5vw;
     transition-duration: 0.5s;
-    font-family: 'Julius Sans One', sans-serif;}
+    font-family: 'Julius Sans One', sans-serif;
+}
 
 .btn-poll:hover {
     cursor: pointer;
@@ -156,46 +155,47 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     width: 100%;
 }
 
-.brandPromo{
+.brandPromo {
     padding: 20vh 0;
     width: 100vw!important;
     background-image: linear-gradient(to bottom, #212529, #525458, #88898c, #c2c2c4, #ffffff);
 }
 
-.whiteText{
+.whiteText {
     color: white;
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.brandImg{
+.brandImg {
     width: 100%;
 }
-.brandImgZee{
+
+.brandImgZee {
     width: 60%;
 }
 
-.brandImgTvc{
+.brandImgTvc {
     width: 60%;
 }
 
-.flexForBrandImg{
+.flexForBrandImg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form{
+.form {
     background-color: #212529;
 }
 
-.priceRow{
+.priceRow {
     width: 60vw!important;
     margin: 0 auto!important;
     font-family: 'Julius Sans One', sans-serif;
     padding: 10vh 0 5vh 0;
 }
 
-.whiteSpace{
+.whiteSpace {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -203,42 +203,42 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     justify-content: space-between;
 }
 
-.influencerBanner{
+.influencerBanner {
     width: 40%;
     align-self: flex-start;
 }
 
-.greenText{
+.greenText {
     padding-right: 5%;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     color: #3fb54f;
     font-weight: bold;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
-.influencerBadgeImg{
+.influencerBadgeImg {
     transform: scale(1.15);
 }
 
-.perks{
+.perks {
     padding: 1rem;
 }
 
-.card{
+.card {
     transition: transform 0.3s;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.033)
 }
 
 .buttonn {
-	border-radius:28px;
-	cursor:pointer;
-	text-decoration:none;
+    border-radius: 28px;
+    cursor: pointer;
+    text-decoration: none;
     transition: all 0.6s;
     text-align: center;
     width: 10vw;
@@ -255,15 +255,15 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 .buttonn:hover {
     text-decoration: none;
     transform: scale(1.07);
-    background-color:#8D8D8D;
+    background-color: #8D8D8D;
 }
 
 .buttonn:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
-.hiddenTable{
+.hiddenTable {
     display: none;
     width: 100vw!important;
     margin-bottom: 0!important;
@@ -295,103 +295,82 @@ ion-icon:hover {
     .banner {
         height: 90vh;
     }
-
     .influencer {
         width: 100%;
         height: 100%;
     }
-
     .facts {
         width: 85vw;
     }
-
     .button button {
         width: 60vw;
         height: 12.5vh;
     }
-
     .btn-poll {
         padding: 2.5vh 10vw
     }
-
     .mainText {
         padding-top: 10vh;
         font-size: 2.5rem;
     }
-
     .smallText {
         font-size: 1rem;
         padding: 0 2.5rem;
     }
-    
     .bottomInfluencer {
         padding-top: calc(var(--bs-gutter-x));
     }
-
-    .priceRow{
+    .priceRow {
         width: 90vw!important;
     }
-
-    .price{
-        font-size:1rem;
+    .price {
+        font-size: 1rem;
     }
-
-    .card{
+    .card {
         transition: transform 0.75s;
     }
-    
-    .card:hover{
+    .card:hover {
         transform: scale(1.05);
     }
-
-    .perks{
+    .perks {
         padding: 1rem;
         display: none;
     }
-
-    .card-body{
+    .card-body {
         height: 0!important;
         width: 0!important;
         padding: 0!important;
     }
-    
-    hr{
+    hr {
         padding: 0;
         margin: 0!important;
         display: none;
     }
-
-    .card-footer-text{
-        font-size: 0.75em!important;=
+    .card-footer-text {
+        font-size: 0.75em!important;
         white-space: nowrap!important;
     }
-
-    .strike{
+    .strike {
         font-size: 0.75rem;
     }
-
-    .greenText{
+    .greenText {
         font-size: 0.6rem;
         font-weight: bold;
     }
-
-    .hiddenTable{
+    .hiddenTable {
         display: block;
     }
-
-    .buttonn{
+    .buttonn {
         width: 50vw;
         height: 12.5vh;
     }
-
-    .brandImg{
+    .brandImg {
         width: 100%!important;
     }
-
-    .brandImgZee{
+    .brandImgZee {
         width: 40%;
     }
-    .brandImgTvc{
+    .brandImgTvc {
         width: 60%;
     }
 }
