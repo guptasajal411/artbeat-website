@@ -68,13 +68,14 @@ body {
     display: flex;
     align-items: center;
     padding-bottom: 10vh;
+    justify-content:center!important;
 }
 
 .button button {
     text-align: center;
     width: 15vw;
     height: 10vh;
-    margin: auto;
+    margin: 0 auto!important;
     border: 0;
     transition-duration: 0.5s;
     border-radius: 5px;
