@@ -79,6 +79,7 @@ body {
     transition-duration: 0.5s;
     border-radius: 5px;
     font-size: 1em;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .button button:hover {
@@ -190,7 +191,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     width: 60vw!important;
     margin: 0 auto!important;
     font-family: 'Julius Sans One', sans-serif;
-    padding: 10vh 0;
+    padding: 10vh 0 5vh 0;
 }
 
 .whiteSpace{
@@ -235,28 +236,28 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
 .buttonn {
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
+	/* background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%); */
+	/* background-color:#44c767; */
 	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:0 31px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
     transition: all 0.6s;
-    margin: 5vh auto!important;
+    text-align: center;
+    width: 10vw;
+    height: 10vh;
+    margin: 5vh auto 10vh auto;
+    border: 0;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
 }
 
 .buttonn:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
-    color:white;
     text-decoration: none;
     transform: scale(1.07);
+    background-color:#8D8D8D;
 }
 
 .buttonn:active {
