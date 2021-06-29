@@ -63,8 +63,6 @@ body {
     padding: 1.25vh 0;
 }
 
-
-
 .button {
     width: 100vw;
     display: flex;
@@ -184,13 +182,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     align-items: center;
 }
 
-
-
-
-
-
 .form{
-
     background-color: #212529;
 }
 
@@ -242,17 +234,6 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     transform: scale(1.033)
 }
 
-.checkbox{
-    display: block!important;
-    /* display: block!important;
-    margin-left: auto!important;
-    margin-right: auto!important;
-    position: static!important; */
-    margin: 0 auto!important;
-    height: 1.25em!important;
-    width: 1.25em!important;
-}
-
 .buttonn {
 	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
 	background-color:#44c767;
@@ -269,6 +250,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     transition: all 0.6s;
     margin: 5vh auto!important;
 }
+
 .buttonn:hover {
 	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
 	background-color:#5cbf2a;
@@ -276,6 +258,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     text-decoration: none;
     transform: scale(1.07);
 }
+
 .buttonn:active {
 	position:relative;
 	top:1px;
@@ -286,16 +269,6 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     width: 100vw!important;
     margin-bottom: 0!important;
 }
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     padding: 10vh 0 2vh 0;
@@ -319,38 +292,46 @@ ion-icon:hover {
     text-align: center;
 }
 
-
 @media (max-width: 768px) {
     .banner {
         height: 90vh;
     }
+
     .influencer {
         width: 100%;
         height: 100%;
     }
+
     .facts {
         width: 85vw;
     }
+
     .button button {
         width: 50vw;
     }
+
     .btn-poll {
         padding: 2.5vh 10vw
     }
+
     .mainText {
         padding-top: 10vh;
         font-size: 2.5rem;
     }
+
     .smallText {
         font-size: 1rem;
         padding: 0 2.5rem;
     }
+    
     .bottomInfluencer {
         padding-top: calc(var(--bs-gutter-x));
     }
+
     .priceRow{
         width: 90vw!important;
     }
+
     .price{
         font-size:1rem;
     }
@@ -368,6 +349,7 @@ ion-icon:hover {
         padding: 1rem;
         display: none;
     }
+
     .card-body{
         height: 0!important;
         width: 0!important;
@@ -396,23 +378,6 @@ ion-icon:hover {
         font-weight: bold;
     }
 
-    .checkbox{
-        /* display: block!important;
-        margin-left: auto!important;
-        margin-right: auto!important;
-        position: static!important; */
-        height: 1.25em!important;
-        width: 1.25em!important;
-    }
-
-    /* .checkboxes{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color:red;
-        height: 10vh!important;
-    } */
-
     .hiddenTable{
         display: block;
     }
@@ -427,6 +392,4 @@ ion-icon:hover {
     .brandImgTvc{
         width: 60%;
     }
-
-
 }
