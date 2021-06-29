@@ -159,7 +159,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 .brandPromo{
     padding: 20vh 0;
     width: 100vw!important;
-    background-image: linear-gradient(to bottom, #3c4043, #696b6e, #999a9c, #cbcbcc, #ffffff);
+    background-image: linear-gradient(to bottom, #212529, #525458, #88898c, #c2c2c4, #ffffff);
 }
 
 .whiteText{
@@ -189,14 +189,16 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 
 
 
+.form{
 
+    background-color: #212529;
+}
 
 .priceRow{
     width: 60vw!important;
     margin: 0 auto!important;
     font-family: 'Julius Sans One', sans-serif;
     padding: 10vh 0;
-    background-color: #3C4043;
 }
 
 .whiteSpace{
@@ -282,6 +284,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 .hiddenTable{
     display: none;
     width: 100vw!important;
+    margin-bottom: 0!important;
 }
 
 
