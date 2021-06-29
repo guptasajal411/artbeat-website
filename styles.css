@@ -156,19 +156,6 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     width: 100%;
 }
 
-form {
-    padding: 10vh 0;
-    width: 100vw;
-    margin: 0 auto;
-    background-color: #3C4043;
-}
-
-.upperForm{
-    width: 50vw;
-    margin: 0 auto;
-    color:white;
-}
-
 .brandPromo{
     padding: 20vh 0;
     width: 100vw!important;
@@ -204,12 +191,12 @@ form {
 
 
 
-
 .priceRow{
     width: 60vw!important;
     margin: 0 auto!important;
     font-family: 'Julius Sans One', sans-serif;
-    padding: 0 0 10vh 0;
+    padding: 10vh 0;
+    background-color: #3C4043;
 }
 
 .whiteSpace{
