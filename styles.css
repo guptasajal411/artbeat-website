@@ -72,7 +72,7 @@ body {
 
 .button button {
     text-align: center;
-    width: 10vw;
+    width: 15vw;
     height: 10vh;
     margin: auto;
     border: 0;
@@ -305,7 +305,8 @@ ion-icon:hover {
     }
 
     .button button {
-        width: 50vw;
+        width: 60vw;
+        height: 12.5vh;
     }
 
     .btn-poll {
@@ -378,7 +379,8 @@ ion-icon:hover {
     }
 
     .buttonn{
-        width: 35vw;
+        width: 50vw;
+        height: 12.5vh;
     }
 
     .brandImg{
