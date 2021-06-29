@@ -227,7 +227,6 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
 .card{
-    /* transition: border 0.3s; */
     transition: transform 0.3s;
 }
 
@@ -236,8 +235,6 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 }
 
 .buttonn {
-	/* background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%); */
-	/* background-color:#44c767; */
 	border-radius:28px;
 	cursor:pointer;
 	text-decoration:none;
@@ -338,7 +335,6 @@ ion-icon:hover {
     }
 
     .card{
-        /* transition: border 0.3s; */
         transition: transform 0.75s;
     }
     
@@ -364,9 +360,7 @@ ion-icon:hover {
     }
 
     .card-footer-text{
-        font-size: 0.75em!important;
-        /* white-space: pre-wrap!important;
-        word-break: keep-all!important; */
+        font-size: 0.75em!important;=
         white-space: nowrap!important;
     }
 
@@ -381,6 +375,10 @@ ion-icon:hover {
 
     .hiddenTable{
         display: block;
+    }
+
+    .buttonn{
+        width: 35vw;
     }
 
     .brandImg{
