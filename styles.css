@@ -14,6 +14,55 @@ body {
     background: url(bg.jpg) no-repeat center center/cover;
 }
 
+/* .topButton {
+    margin-top: 5vh;
+    background-color: #bb0306d2!important;
+    padding: 25px 15px;
+    text-shadow: 1px 1px #000000;
+    
+}
+
+.topButton:hover {
+    text-decoration: none;
+    transform: scale(1.07);
+} */
+
+.topButton {
+    background: #bb0306d2;
+    background-image: -webkit-linear-gradient(top, #bb0306d2, #ff4242);
+    background-image: -moz-linear-gradient(top, #bb0306d2, #ff4242);
+    background-image: -ms-linear-gradient(top, #bb0306d2, #ff4242);
+    background-image: -o-linear-gradient(top, #bb0306d2, #ff4242);
+    background-image: linear-gradient(to bottom, #bb0306d2, #ff4242);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px #1f1e1f;
+    -webkit-box-shadow: 3px 3px 10px #a6a6a6;
+    -moz-box-shadow: 3px 3px 10px #a6a6a6;
+    box-shadow: 3px 3px 10px #a6a6a6;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 10px 20px 10px 20px;
+    width: 15vw!important;
+    text-decoration: none;
+  }
+  
+  .topButton:hover {
+    background: #ff4242;
+    background-image: -webkit-linear-gradient(top, #ff4242, #bb0306d2);
+    background-image: -moz-linear-gradient(top, #ff4242, #bb0306d2);
+    background-image: -ms-linear-gradient(top, #ff4242, #bb0306d2);
+    background-image: -o-linear-gradient(top, #ff4242, #bb0306d2);
+    background-image: linear-gradient(to bottom, #ff4242, #bb0306d2);
+    text-decoration: none;
+  }
+
+.future{
+    text-shadow: 0px 0px #000000!important;
+}
+
 .banner {
     background-attachment: fixed;
     height: 75vh;
@@ -25,6 +74,7 @@ body {
 }
 
 .mainText {
+    text-shadow: 4px 4px #000000;
     text-align: center;
     font-size: 4rem;
     font-family: 'Julius Sans One', sans-serif;
@@ -35,7 +85,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: #00000046;
+    background-color: #00000091;
     padding: 2.5vh 2.5vw;
     border-radius: 10px;
 }
@@ -210,7 +260,7 @@ button a:active {
 
 .greenText {
     padding-right: 5%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #3fb54f;
     font-weight: bold;
 }
@@ -250,12 +300,15 @@ button a:active {
     font-size: 1em;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
+    background-color: #bb0306d2;
+    text-shadow: 1px 1px #000000;
+    color: white;
 }
 
 .buttonn:hover {
     text-decoration: none;
     transform: scale(1.07);
-    background-color: #8D8D8D;
+    background-color: grey;
 }
 
 .buttonn:active {
@@ -292,6 +345,11 @@ ion-icon:hover {
 }
 
 @media (max-width: 768px) {
+.topButton{
+    width: 40vw!important;
+    font-size: 1rem;
+}
+
     .banner {
         height: 90vh;
     }
@@ -354,7 +412,7 @@ ion-icon:hover {
         font-size: 0.75rem;
     }
     .greenText {
-        font-size: 0.6rem;
+        font-size: 1rem;
         font-weight: bold;
     }
     .hiddenTable {
