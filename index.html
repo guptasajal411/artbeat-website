@@ -1,396 +1,996 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Meta tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- External CSS -->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-        <!-- Favicon -->
-        <link rel="icon" href="brandLogo.png">
-        <title>Artbeat</title>
-    </head>
-    <body>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                <div class="container-fluid ">
-                    <img src="brandLogo.png" alt="logo" class="logo">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ml-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#prices">Product</a>
-                            <a class="nav-link" href="#prices">Price</a>
-                            <a class="nav-link" href="#">Contact Us - support@artbeat.tech
-                            </a>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="brandLogo.png">
+    <title>Artbeat</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+    body {
+        background-color: rgb(99, 99, 99);
+        /* color: white; */
+    }
+
+    .josefin {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .play {
+        font-family: 'Play', sans-serif;
+    }
+
+    .section-1 {
+        background: url(images/ArtBEAT-WORK/BACKGROUND.jpg) no-repeat left center/cover;
+        /* height: 90vh; */
+    }
+
+    .navbar-collapse {
+        width: 80%;
+    }
+
+    .menuNavbar {
+        position: absolute;
+        width: 75%;
+        /* padding:auto 2rem;  */
+        top: 10;
+        z-index: 10;
+        float: left;
+        margin: 0;
+        overflow: hidden;
+        display: none;
+    }
+
+    .navbar:nth-child(1) {
+        margin-left: 12.5% !important;
+        margin-right: 12.5% !important;
+        backdrop-filter: blur(5px);
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .filler {
+        width: 20%;
+    }
+
+    .navbar-icons {
+        display: flex;
+    }
+
+    .navLink {
+        position: relative;
+        font-size: 1.15rem;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a.navLink:hover {
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+    .navLink::before {
+        bottom: 0px;
+        left: 0;
+        transition: 150ms;
+        height: 2px;
+        content: "";
+        position: absolute;
+        background-color: #00bfe7;
+    }
+
+    .navLink-ltr::before {
+        width: 100%;
+        bottom: -15px;
+        opacity: 0;
+        opacity: 0;
+    }
+
+    .navLink-ltr:hover::before {
+        bottom: -8px;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .menuNavbar {
+        background-color: #151241;
+    }
+
+    button ion-icon {
+        width: 100%;
+    }
+
+    #navbarSupportedContent1 {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .navbar-toggler {
+        border-color: white !important;
+        border: 0 !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0rem
+    }
+
+    .navItem {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navItem:hover {
+        background-color: #e2e0e0;
+        color: black !important;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    /* navbar ends */
+
+    .coverPage {
+        padding: 15vh 0 30vh 0;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .coverContainer {
+        margin-left: 12.5rem;
+        margin-right: 12.5rem;
+    }
+
+    .coverText {
+        animation: animationForCoverText;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+
+    @keyframes animationForCoverText {
+        0% {
+            bottom: -22.5vh;
+            opacity: 0;
+        }
+
+        6% {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        100% {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    .coverHeadline {
+        position: relative;
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: animationForCoverHeadline;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animationForCoverHeadline {
+        0% {
+            bottom: -15vh;
+            opacity: 0;
+        }
+
+        6% {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        100% {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    .buttonColumn {
+        position: relative;
+        display: inline;
+        animation: animationForButtonColumn;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        font-size: 1.25rem;
+    }
+
+    @keyframes animationForButtonColumn {
+        0% {
+            bottom: -10vh;
+            opacity: 0;
+        }
+
+        6% {
+            bottom: 0;
+            opacity: 1;
+        }
+
+        100% {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    .coverButton {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+    }
+
+    .coverButton:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 60%;
+        width: 20%;
+        border-top: 2px solid #0293ba;
+        border-left: 2px solid #0293ba;
+        content: "";
+        transition: all 0.25s ease-in;
+    }
+
+    .coverButton:hover:before {
+        height: 100%;
+        width: 100%;
+    }
+
+    .coverButton:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 20%;
+        border-bottom: 2px solid #0293ba;
+        border-right: 2px solid #0293ba;
+        content: "";
+        transition: all 0.25s ease-in;
+    }
+
+    .coverButton:hover:after {
+        height: 100%;
+        width: 100%;
+    }
+
+    .coverButton:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    .futureOfInfluencers {
+        background-color: #0a0119;
+        color: white;
+    }
+
+    .future {
+        font-family: "Play", sans-serif;
+    }
+
+    .facts {
+        font-size: 1rem;
+        list-style: none;
+        color: #adadad;
+        margin-bottom: 15px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .bottomContainer {
+        background-color: #0a0119;
+    }
+
+    .font {
+        font-family: 'Play', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .form,
+    .brandPromo {
+        background-color: #0a0119;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .footer_container {
+        color: white;
+        background-color: #0a0119;
+        padding: 3rem 6rem 1rem 6rem;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .column1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .column2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .column3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .column4 {
+        grid-area: 1 / 4 / 2 / 5;
+        margin-left: 4rem;
+    }
+
+    .footer .column1 h1,
+    .footer .column2 h1,
+    .footer .column3 h1 {
+        font-family: "Play", sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .footer .column1 ul li,
+    .footer .column2 ul li,
+    .footer .column3 p {
+        font-size: 1rem;
+        list-style: none;
+        color: #adadad;
+        margin-bottom: 15px;
+    }
+
+    .footer .column1 h1,
+    .footer .column2 h1,
+    .footer .column3 h1 {
+        margin-bottom: 30px;
+    }
+
+    .footer .column1 ul li a,
+    .footer .column2 ul li a {
+        color: #adadad;
+        text-decoration: none;
+    }
+
+    .footer .column4 ul {
+        display: flex;
+    }
+
+    .footer .column4 ul li {
+        list-style: none;
+    }
+
+    .footer .column4 img {
+        margin-bottom: 20px;
+    }
+
+    .footer .column4 ul li a {
+        display: block;
+        font-size: 15px;
+        color: #ffffff;
+        height: 40px;
+        width: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        line-height: 44px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .footer ul {
+        padding-left: 0rem;
+    }
+
+    /* Footer Last */
+
+    .footer_end {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0;
+    }
+
+    .footer_end p {
+        font-size: 16px;
+        color: #adadad;
+        line-height: 26px;
+        margin: 20px 0 5px 0;
+        text-align: center !important;
+    }
+
+    .footer .text-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 1400px) {}
+
+    @media only screen and (max-width: 1200px) {}
+
+    @media only screen and (max-width: 992px) {
+        .footer_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .column4 {
+            margin-left: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .footer_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 0.5fr 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 40px;
+        }
+
+        .column1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .column2 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .column3 {
+            grid-area: 2 / 1 / 3 / 2;
+            padding-right: 50px;
+        }
+
+        .column4 {
+            grid-area: 2 / 2 / 3 / 3;
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        .column1,
+        .column3 {
+            margin-right: 45px;
+            width: 100%;
+        }
+
+        .footer_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .footer .column4 ul li a {
+            height: 30px;
+            width: 30px;
+            line-height: 35px;
+        }
+    }
+
+    @media only screen and (max-width: 420px) {
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 0.5fr) 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .column1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .column2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .column3 {
+            grid-area: 3 / 1 / 4 / 2;
+            width: 100%;
+            padding-right: 0;
+            margin-right: 0;
+            padding-bottom: 0;
+        }
+
+        .column4 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .footer .column4 ul li a {
+            height: 40px;
+            width: 40px;
+            line-height: 44px;
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <div class="section-1">
+            <nav class="navbar navbar-expand-xl navbar-dark py-3 play">
+                <div class="container-fluid">
+                    <a href="/artbeat-entertainment/index.html">
+                        <div class="navbarBrand">
+                            <img src="images/new.png" alt="" srcset="" class="brandImg">
                         </div>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav justify-content-between mb-2 mb-lg-0 mx-auto">
+                            <li class="nav-item mx-3 mx-xl-4">
+                                <a class="navLink navLink-ltr" href="/artbeat-entertainment/index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-xl-4">
+                                <a class="navLink navLink-ltr"
+                                    href="/artbeat-entertainment/about-us/index.html">Product</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-xl-4">
+                                <a class="navLink navLink-ltr"
+                                    href="/artbeat-entertainment/portfolio/index.html">Price</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-xl-4">
+                                <a class="navLink navLink-ltr"
+                                    href="/artbeat-entertainment/contact-us/index.html">Contact Us -
+                                    support@artbeat.tech</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-between">
+                            <li class="nav-item mx-2 mx-xxl-2">
+                                <a class="navLink" href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2 mx-xxl-2">
+                                <a class="navLink" href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2 mx-xxl-2">
+                                <a class="navLink" href="#">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2 mx-xxl-2">
+                                <a class="navLink" href="#">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="flexbox">
-            <div class="container banner m-2">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <h1 class="mainText">Artbeat Entertainment</h1>
-                    </div>
-                    <div class="col-xl-12">
-                    </div>
-                    <p class="smallText">Do you want to become a big influencer?<br>
-                        Have you ever thought about cinematic reel shoot by professionals?
-                    </p>
+            <nav class="navbar navbar-dark py-2 menuNavbar play">
+                <div class="navbarBrand ms-sm-5">
+                    <a href="/artbeat-entertainment/index.html">
+                        <img src="/artbeat-entertainment/images/artbeat-circle-logo-1.png" alt="" srcset=""
+                            class="brandImg">
+                    </a>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-6 justify-content-between">
-                        <a href="#prices">
-                            <button type="submit" class="topButton">Let me check out<br>packages</button>
+                <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="material-icons-outlined"
+                        style="font-size: 2.25rem;">
+                        menu
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
+                    <ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
+                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/index.html">Home</a>
+                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/about-us/index.html">About</a>
+                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
+                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/our-services/index.html">Services</a>
+                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+                    </ul>
+                    <div class="d-flex flex-row justify-content-evenly">
+                        <a href="#">
+                            <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter" style="color: white;"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-youtube" style="color: white;"></ion-icon>
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="futureOfInfluencers">
-            <div class="h1">
-                <h1 class="mainText future">Future of Influencers</h1>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadlKdNa3/s-539x537_webp_3cfa9429-fff3-4790-a2c2-1077070f55d7.webp"
-                            alt="" class="influencer">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadlKdNa3/s-900x900_v-fs_webp_2ce25724-8f5d-4ffe-a28d-daffa814176c_small.webp"
-                            alt="" class="influencer">
-                    </div>
-                    <div class="col-md-3 col-6 bottomInfluencer">
-                        <img src="samKhanNew.jpg" alt="" class="influencer">
-                    </div>
-                    <div class="col-md-3 col-6 bottomInfluencer">
-                        <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadlKdNa3/s-605x448_v-fs_webp_148cb7d2-666f-42d6-9a12-0d25e18038be_small.webp"
-                            alt="" class="influencer">
-                    </div>
-                </div>
-            </div>
-            <div class="facts">
-                <p>According to Digital marketers, Instagram reels are the best and easiest way to become famous in this
-                    era.
-                </p>
-                <p>Now a days an Instagram influencers with 100k followers are making 20k in a month just by promoting
-                    various brands.
-                </p>
-                <p>Instagram boosts the reel if its professionaly build so that's why influencers hire professional setup .
-                </p>
-            </div>
-            <div class="text-center py-5">
-                <button type="submit" class="topButton">Book an appointment</button>
-            </div>
-        </div>
-        <div class="bottomContainer">
-            <div class="container" id="bottom">
-                <div class="row">
-                    <div class="col-xl-12 text-center">
-                        <h3 class="font">Do you dream to be paid from larger platform like IG, YT and FB for your videos?
-                        </h3>
-                        <div class="pollButtons">
-                            <button class="btn-poll yes question-1" id="question-1-yes">Yes</button>
-                            <button class="btn-poll no question-1" id="question-1-no">No</button>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 text-center">
-                        <h3 class="font"> Do you like to have your cinematic intro and video from professionals?
-                        </h3>
-                        <div class="pollButtons">
-                            <button class="btn-poll yes question-2" id="question-2-yes">Yes</button>
-                            <button class="btn-poll no question-2" id="question-2-no">No</button>
+            </nav>
+            <div class="coverPage">
+                <div class="container coverContainer">
+                    <div class="row coverRow">
+                        <div class="col-lg-6 col-12 coverContent">
+                            <h1 class="coverHeadline pt-2 pb-2 my-4 play">
+                                Artbeat Entertainment
+                            </h1>
+                            <p class="josefin buttonColumn mt-2">Do you want to become a big influencer? <br>
+                                Have you ever thought about cinematic reel shoot by professionals?
+                            </p>
+                            <br><br>
+                            <div class="px-0 py-0 play mb-2">
+                                <a href="#" class="coverButton px-4 py-2">
+                                    Let Me Check Out Packages
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="form">
-            <div class="text-center" id="prices">
-                <div class="row row-cols-3 g-2 g-md-5 priceRow">
-                    <div class=" col">
-                        <div class="card firstCard h-100 ">
-                            <div class="whiteSpace hidden">
-                                <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
-                                <p class="greenText">Save 40%</p>
-                            </div>
-                            <h1 class="price hidden"><strike>Rs. 2499/-</strike></h1>
-                            <h1 class="price">
-                                Rs. 2499/-
-                            </h1>
-                            <img src="creatorBadge.png" class="card-img-top" alt="...">
-                            <hr>
-                            <div class="perks text-start">
-                                <li>3 Cinematic reel</li>
-                                <li>reel delivery in 3days*</li>
-                                <li>Growth hacks from professionals</li>
-                                <li>#tags for videos</li>
-                                <li>Guaranteed Growth*</li>
-                                <li>Priority Service</li>
-                                <li>Certificate of Creator</li>
-                            </div>
-                            <div class="card-body"></div>
-                            <div class="text-center card-footer firstFooter">
-                                <div class="text-center">
-                                    <span class="card-footer-text">
-                                    Creator
-                                    </span>
-                                    <span class="card-footer-text">
-                                    Package
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 secondCard">
-                            <div class="whiteSpace">
-                                <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
-                                <p class="greenText">Save 50%</p>
-                            </div>
-                            <h1 class="price">
-                                Rs. 999/-
-                            </h1>
-                            <h3 class="strike"><strike>2049</strike></h3>
-                            <img src="influencerOpBadge.png" class="card-img-top influencerBadgeImg" alt="...">
-                            <hr>
-                            <div class="perks text-start">
-                                <li>2 Cinematic reel</li>
-                                <li>reel delivery in 4days*</li>
-                                <li>Growth hacks from professionals</li>
-                                <li>#tags for videos</li>
-                            </div>
-                            <div class="card-body"></div>
-                            <div class="card-footer secondFooter">
-                                <!-- <br> -->
-                                <div class="text-center">
-                                    <span class="card-footer-text">
-                                    Influencer
-                                    </span>
-                                    <span class="card-footer-text">
-                                    OP'
-                                    </span>
-                                    <span class="card-footer-text">
-                                    Package
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 thirdCard">
-                            <div class="whiteSpace hidden">
-                                <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
-                                <p class="greenText">Save 40%</p>
-                            </div>
-                            <h1 class="price hidden"><strike>Rs. 799/-</strike></h1>
-                            <h1 class="price">
-                                Rs. 799/-
-                            </h1>
-                            <img src="starBadge.png" class="card-img-top" alt="...">
-                            <hr>
-                            <div class="perks text-start">
-                                <li>1 Cinematic reel</li>
-                                <li>reel delivery in 4days*</li>
-                            </div>
-                            <div class="card-body"></div>
-                            <div class="text-center card-footer thirdFooter">
-                                <span class="card-footer-text">
-                                Star
-                                </span>
-                                <span class="card-footer-text">
-                                Package
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <div class="futureOfInfluencers">
+        <div class="h1">
+            <h1 class="mainText future">Future of Influencers</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadlKdNa3/s-539x537_webp_3cfa9429-fff3-4790-a2c2-1077070f55d7.webp"
+                        alt="" class="influencer">
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadlKdNa3/s-900x900_v-fs_webp_2ce25724-8f5d-4ffe-a28d-daffa814176c_small.webp"
+                        alt="" class="influencer">
+                </div>
+                <div class="col-md-3 col-6 bottomInfluencer">
+                    <img src="samKhanNew.jpg" alt="" class="influencer">
+                </div>
+                <div class="col-md-3 col-6 bottomInfluencer">
+                    <img src="https://storage.googleapis.com/studio-design-asset-files/projects/7kadlKdNa3/s-605x448_v-fs_webp_148cb7d2-666f-42d6-9a12-0d25e18038be_small.webp"
+                        alt="" class="influencer">
                 </div>
             </div>
-            <table class="table table-dark table-hover hiddenTable">
-                <thead>
-                    <tr>
-                        <th scope="col">Creator Package</th>
-                        <th scope="col">Influencer OP' Package</th>
-                        <th scope="col">Star Package</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>3 Cinematic reel</td>
-                        <td>2 Cinematic reel</td>
-                        <td>1 Cinematic reel</td>
-                    </tr>
-                    <tr>
-                        <td>reel delivery in 3days*</td>
-                        <td>reel delivery in 4days*</td>
-                        <td>reel delivery in 4days*</td>
-                    </tr>
-                    <tr>
-                        <td>Growth idea from professionals</td>
-                        <td>Growth idea from professionals</td>
-                        <td style="text-align: center;">-</td>
-                    </tr>
-                    <tr>
-                        <td>Get Best #tags for videos</td>
-                        <td>Get Best #tags for videos</td>
-                        <td style="text-align: center;">-</td>
-                    </tr>
-                    <tr>
-                        <td>Guaranteed Growth*</td>
-                        <td style="text-align: center;">-</td>
-                        <td style="text-align: center;">-</td>
-                    </tr>
-                    <tr>
-                        <td>Priority Service</td>
-                        <td style="text-align: center;">-</td>
-                        <td style="text-align: center;">-</td>
-                    </tr>
-                    <tr>
-                        <td>Certificate of Creator</td>
-                        <td style="text-align: center;">-</td>
-                        <td style="text-align: center;">-</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="text-center py-5">
-                <a href="https://forms.gle/F3SYkJM6pUZ4HE9y6" target="_blank">
-                <button type="submit" class="topButton py-3">Book an appointment</button>
+        </div>
+        <div class="facts">
+            <p>According to Digital marketers, Instagram reels are the best and easiest way to become famous in this
+                era.
+            </p>
+            <p>Now a days an Instagram influencers with 100k followers are making 20k in a month just by promoting
+                various brands.
+            </p>
+            <p>Instagram boosts the reel if its professionaly build so that's why influencers hire professional setup .
+            </p>
+        </div>
+        <div class="text-center py-5">
+            <div class="px-0 py-0 play mb-2">
+                <a href="#" class="coverButton px-4 py-3">
+                    Book an Appointment
                 </a>
             </div>
         </div>
-        <div class="brandPromo">
-            <h1 class="text-center whiteText">
-                We have worked with
-            </h1>
-            <div class="container brandContainer">
-                <div class="row text-center justify-content-between">
-                    <div class="col-md-2 col-4 flexForBrandImg">
-                        <img src="https://cdn.shopify.com/s/files/1/0522/7020/3059/collections/pink-woolf.png?v=1615201091"
-                            alt="" class="brandImg ">
+    </div>
+
+
+
+    <div class="bottomContainer">
+        <div class="container" id="bottom">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <h3 class="font">Do you dream to be paid from larger platform like IG, YT and FB for your videos?
+                    </h3>
+                    <div class="pollButtons">
+                        <button class="btn-poll yes question-1" id="question-1-yes">Yes</button>
+                        <button class="btn-poll no question-1" id="question-1-no">No</button>
                     </div>
-                    <div class="col-md-2 col-4 flexForBrandImg">
-                        <img src="tvcLogo.png" alt="" class="brandImgTvc">
-                    </div>
-                    <div class="col-md-2 col-4 flexForBrandImg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1280px-Amazon_Prime_Logo.svg.png"
-                            alt="" class="brandImg ">
-                    </div>
-                    <div class="col-md-2 col-6 flexForBrandImg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/MX_Player_Logo.png/1920px-MX_Player_Logo.png"
-                            alt="" class="brandImg ">
-                    </div>
-                    <div class="col-md-2 col-6 flexForBrandImg">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Zee_entertainment_enterprises_logo.svg"
-                            alt="" class="brandImgZee ">
+                </div>
+                <div class="col-xl-12 text-center">
+                    <h3 class="font"> Do you like to have your cinematic intro and video from professionals?
+                    </h3>
+                    <div class="pollButtons">
+                        <button class="btn-poll yes question-2" id="question-2-yes">Yes</button>
+                        <button class="btn-poll no question-2" id="question-2-no">No</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-lg-3 col-12">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h5>About Artbeat</h5>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">About us</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Contact us</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Newsroom</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Placeholder</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Trust Centre</a>
-                                </div>
+    </div>
+
+    <div class="form">
+        <div class="text-center" id="prices">
+            <div class="row row-cols-3 g-2 g-md-5 priceRow">
+                <div class=" col">
+                    <div class="card firstCard h-100 ">
+                        <div class="whiteSpace hidden">
+                            <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
+                            <p class="greenText">Save 40%</p>
+                        </div>
+                        <h1 class="price hidden"><strike>Rs. 2499/-</strike></h1>
+                        <h1 class="price">
+                            Rs. 2499/-
+                        </h1>
+                        <img src="creatorBadge.png" class="card-img-top" alt="...">
+                        <hr>
+                        <div class="perks text-start">
+                            <li>3 Cinematic reel</li>
+                            <li>reel delivery in 3days*</li>
+                            <li>Growth hacks from professionals</li>
+                            <li>#tags for videos</li>
+                            <li>Guaranteed Growth*</li>
+                            <li>Priority Service</li>
+                            <li>Certificate of Creator</li>
+                        </div>
+                        <div class="card-body"></div>
+                        <div class="text-center card-footer firstFooter">
+                            <div class="text-center">
+                                <span class="card-footer-text">
+                                    Creator
+                                </span>
+                                <span class="card-footer-text">
+                                    Package
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 col-12">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h5>Legal</h5>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Privacy Policy</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Advertising Policy</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Cookies</a>
-                                </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 secondCard">
+                        <div class="whiteSpace">
+                            <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
+                            <p class="greenText">Save 50%</p>
+                        </div>
+                        <h1 class="price">
+                            Rs. 999/-
+                        </h1>
+                        <h3 class="strike"><strike>2049</strike></h3>
+                        <img src="influencerOpBadge.png" class="card-img-top influencerBadgeImg" alt="...">
+                        <hr>
+                        <div class="perks text-start">
+                            <li>2 Cinematic reel</li>
+                            <li>reel delivery in 4days*</li>
+                            <li>Growth hacks from professionals</li>
+                            <li>#tags for videos</li>
+                        </div>
+                        <div class="card-body"></div>
+                        <div class="card-footer secondFooter">
+                            <!-- <br> -->
+                            <div class="text-center">
+                                <span class="card-footer-text">
+                                    Influencer
+                                </span>
+                                <span class="card-footer-text">
+                                    OP'
+                                </span>
+                                <span class="card-footer-text">
+                                    Package
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 supportContainer col-12">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h5>Support</h5>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Product Support</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Community Support</a>
-                                </div>
-                                <div class="col-12">
-                                    <a href="#" class="link-dark">Report Abuse</a>
-                                </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 thirdCard">
+                        <div class="whiteSpace hidden">
+                            <img src="Green Badge American Football Logo (1).png" alt="" class="influencerBanner">
+                            <p class="greenText">Save 40%</p>
+                        </div>
+                        <h1 class="price hidden"><strike>Rs. 799/-</strike></h1>
+                        <h1 class="price">
+                            Rs. 799/-
+                        </h1>
+                        <img src="starBadge.png" class="card-img-top" alt="...">
+                        <hr>
+                        <div class="perks text-start">
+                            <li>1 Cinematic reel</li>
+                            <li>reel delivery in 4days*</li>
+                        </div>
+                        <div class="card-body"></div>
+                        <div class="text-center card-footer thirdFooter">
+                            <span class="card-footer-text">
+                                Star
+                            </span>
+                            <span class="card-footer-text">
+                                Package
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-dark table-hover hiddenTable">
+            <thead>
+                <tr>
+                    <th scope="col">Creator Package</th>
+                    <th scope="col">Influencer OP' Package</th>
+                    <th scope="col">Star Package</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3 Cinematic reel</td>
+                    <td>2 Cinematic reel</td>
+                    <td>1 Cinematic reel</td>
+                </tr>
+                <tr>
+                    <td>reel delivery in 3days*</td>
+                    <td>reel delivery in 4days*</td>
+                    <td>reel delivery in 4days*</td>
+                </tr>
+                <tr>
+                    <td>Growth idea from professionals</td>
+                    <td>Growth idea from professionals</td>
+                    <td style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                    <td>Get Best #tags for videos</td>
+                    <td>Get Best #tags for videos</td>
+                    <td style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                    <td>Guaranteed Growth*</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                    <td>Priority Service</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
+                </tr>
+                <tr>
+                    <td>Certificate of Creator</td>
+                    <td style="text-align: center;">-</td>
+                    <td style="text-align: center;">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center py-5">
+            <div class="px-0 py-0 play mb-2">
+                <a href="#" class="coverButton px-4 py-3" style="color: white;">
+                    Book an Appointment
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="brandPromo">
+        <h1 class="text-center whiteText">
+            We have worked with
+        </h1>
+        <div class="container brandContainer">
+            <div class="row text-center justify-content-between">
+                <div class="col-md-2 col-4 flexForBrandImg">
+                    <img src="https://cdn.shopify.com/s/files/1/0522/7020/3059/collections/pink-woolf.png?v=1615201091"
+                        alt="" class="brandImg ">
+                </div>
+                <div class="col-md-2 col-4 flexForBrandImg">
+                    <img src="tvcLogo.png" alt="" class="brandImgTvc">
+                </div>
+                <div class="col-md-2 col-4 flexForBrandImg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1280px-Amazon_Prime_Logo.svg.png"
+                        alt="" class="brandImg ">
+                </div>
+                <div class="col-md-2 col-6 flexForBrandImg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/MX_Player_Logo.png/1920px-MX_Player_Logo.png"
+                        alt="" class="brandImg ">
+                </div>
+                <div class="col-md-2 col-6 flexForBrandImg">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Zee_entertainment_enterprises_logo.svg"
+                        alt="" class="brandImgZee ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>About Artbeat</h5>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">About us</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Contact us</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Newsroom</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Placeholder</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Trust Centre</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="container socialMedia">
-                            <div class="row align-items-center">
-                                <div class="col-lg-12 col-12">
-                                    <img src="brandLogo.png" alt="" class="brandLogo" align="center">
-                                </div>
-                                <div class="container col-12 col-lg-12 text-center">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <ion-icon name="logo-facebook" size="large"><a href="###"></a></ion-icon>
-                                        </div>
-                                        <div class="col-3">
-                                            <ion-icon name="logo-youtube" size="large"><a href="###"></a></ion-icon>
-                                        </div>
-                                        <div class="col-3">
-                                            <ion-icon name="logo-instagram" size="large"><a href="###"></a></ion-icon>
-                                        </div>
-                                        <div class="col-3">
-                                            <ion-icon name="logo-twitter" size="large"><a href="###"></a></ion-icon>
-                                        </div>
+                </div>
+                <div class="col-6 col-lg-3 col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Legal</h5>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Privacy Policy</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Advertising Policy</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 supportContainer col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Support</h5>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Product Support</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Community Support</a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="link-dark">Report Abuse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="container socialMedia">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 col-12">
+                                <img src="brandLogo.png" alt="" class="brandLogo" align="center">
+                            </div>
+                            <div class="container col-12 col-lg-12 text-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <ion-icon name="logo-facebook" size="large"><a href="###"></a></ion-icon>
+                                    </div>
+                                    <div class="col-3">
+                                        <ion-icon name="logo-youtube" size="large"><a href="###"></a></ion-icon>
+                                    </div>
+                                    <div class="col-3">
+                                        <ion-icon name="logo-instagram" size="large"><a href="###"></a></ion-icon>
+                                    </div>
+                                    <div class="col-3">
+                                        <ion-icon name="logo-twitter" size="large"><a href="###"></a></ion-icon>
                                     </div>
                                 </div>
                             </div>
@@ -398,18 +998,83 @@
                     </div>
                 </div>
             </div>
-            <p class="copyright">Copyright &copy; 2019 - 2021 Artbeat Entertainment Pvt Ltd. <br> All rights reserved.</p>
         </div>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- External JavaScript -->
-        <script src="index.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <!-- Ionicons JavaScript -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+        <p class="copyright">Copyright &copy; 2019 - 2021 Artbeat Entertainment Pvt Ltd. <br> All rights reserved.</p>
+    </div> -->
+
+    <div class="footer_container">
+
+        <div class="footer">
+            <div class="column1">
+                <ul>
+                    <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
+                    <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and Preferences</a></li>
+                    <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy Policy</a></li>
+                    <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
+                    <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
+                </ul>
+            </div>
+            <div class="column2">
+                <ul>
+                    <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Team</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h1>About Us</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut veniam nam libero, nisi ad
+                    consequuntur.
+                    Deleniti nihil id ex officia!</p>
+
+            </div>
+            <div class="column4">
+                <div class="text-center">
+                    <img src="images/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer_end">
+            <p>Copyright © 2021 All rights reserved</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="index.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Ionicons JavaScript -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
