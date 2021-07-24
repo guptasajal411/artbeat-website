@@ -9,19 +9,13 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="brandLogo.png">
     <title>Artbeat</title>
@@ -68,7 +62,7 @@
     .navbar:nth-child(1) {
         margin-left: 12.5% !important;
         margin-right: 12.5% !important;
-        backdrop-filter: blur(5px);
+        /* backdrop-filter: blur(5px); */
     }
 
     li {
@@ -316,6 +310,7 @@
     .form,
     .brandPromo {
         background-color: #0a0119;
+        max-width: 100vw;
     }
 
     * {
@@ -439,11 +434,68 @@
         margin-bottom: 20px;
     }
 
-    @media only screen and (max-width: 1400px) {}
+    @media only screen and (max-width: 1400px) {
+        .navbar-icons {
+            visibility: hidden;
+        }
+    }
 
-    @media only screen and (max-width: 1200px) {}
+    @media only screen and (max-width: 1200px) {
+
+        /* navbar */
+        .navbar:nth-child(1) {
+            display: none;
+        }
+
+        .nav-item {
+            display: none !important;
+        }
+
+        .navbar-nav {
+            width: auto;
+        }
+
+        .menuNavbar {
+            width: 100% !important;
+            display: flex;
+            padding-top: 1rem;
+        }
+    }
 
     @media only screen and (max-width: 992px) {
+
+        /* navbar */
+        .navbar:nth-child(1) {
+            margin-left: 2rem !important;
+            margin-right: 2rem !important;
+        }
+
+        .navbar:nth-child(2) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .navLink-ltr::before {
+            width: 0%;
+            bottom: -5px;
+            opacity: 0;
+        }
+
+        .navLink-ltr:hover::before {
+            bottom: 0px;
+            width: 100%;
+            opacity: 1;
+        }
+
+        .navbar-icons {
+            display: none;
+        }
+
+        .menuNavbar {
+            position: absolute;
+            width: 100%;
+        }
+
         .footer_container {
             padding-left: 2rem;
             padding-right: 2rem;
@@ -455,6 +507,12 @@
     }
 
     @media only screen and (max-width: 768px) {
+
+        .menuNavbar {
+            position: absolute;
+            width: 100%;
+        }
+
         .footer_container {
             padding-left: 2rem;
             padding-right: 2rem;
@@ -542,6 +600,13 @@
             line-height: 44px;
         }
     }
+
+    @media only screen and (max-width: 360px) {
+        .menuNavbar {
+            position: absolute;
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -557,19 +622,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav justify-content-between mb-2 mb-lg-0 mx-auto">
                             <li class="nav-item mx-3 mx-xl-4">
-                                <a class="navLink navLink-ltr" href="/artbeat-entertainment/index.html">Home</a>
+                                <a class="navLink navLink-ltr" href="#">Home</a>
                             </li>
                             <li class="nav-item mx-0 mx-xl-4">
                                 <a class="navLink navLink-ltr"
-                                    href="/artbeat-entertainment/about-us/index.html">Product</a>
+                                    href="#prices">Product</a>
                             </li>
                             <li class="nav-item mx-0 mx-xl-4">
                                 <a class="navLink navLink-ltr"
-                                    href="/artbeat-entertainment/portfolio/index.html">Price</a>
+                                    href="/#prices">Price</a>
                             </li>
                             <li class="nav-item mx-0 mx-xl-4">
                                 <a class="navLink navLink-ltr"
-                                    href="/artbeat-entertainment/contact-us/index.html">Contact Us -
+                                    href="#">Contact Us -
                                     support@artbeat.tech</a>
                             </li>
                         </ul>
@@ -601,8 +666,7 @@
             <nav class="navbar navbar-dark py-2 menuNavbar play">
                 <div class="navbarBrand ms-sm-5">
                     <a href="/artbeat-entertainment/index.html">
-                        <img src="/artbeat-entertainment/images/artbeat-circle-logo-1.png" alt="" srcset=""
-                            class="brandImg">
+                        <img src="images/new.png" alt="" srcset="" class="brandImg">
                     </a>
                 </div>
                 <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
@@ -614,11 +678,10 @@
                 </button>
                 <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
                     <ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
-                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/index.html">Home</a>
-                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/about-us/index.html">About</a>
-                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
-                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/our-services/index.html">Services</a>
-                        <a class="navItem px-2 py-2" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+                        <a class="navItem px-2 py-2" href="#">Home</a>
+                        <a class="navItem px-2 py-2" href="#prices">Product</a>
+                        <a class="navItem px-2 py-2" href="#prices">Price</a>
+                        <a class="navItem px-2 py-2" href="#">support@artbeat.tech</a>
                     </ul>
                     <div class="d-flex flex-row justify-content-evenly">
                         <a href="#">
@@ -1007,16 +1070,16 @@
         <div class="footer">
             <div class="column1">
                 <ul>
-                    <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
-                    <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and Preferences</a></li>
-                    <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy Policy</a></li>
-                    <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Cookies and Preferences</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Site map</a></li>
                     <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
                 </ul>
             </div>
             <div class="column2">
                 <ul>
-                    <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
+                    <li><a href="#">Career</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Team</a></li>
                 </ul>
