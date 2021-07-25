@@ -1,17 +1,17 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-    width: 10vh;
+  width: 10vh;
 }
 
 .flexbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(bg.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(bg.jpg) no-repeat center center/cover;
 }
 
 /* .topButton {
@@ -28,407 +28,415 @@ body {
 } */
 
 .topButton {
-    background: #bb0306d2;
-    background-image: -webkit-linear-gradient(top, #bb0306d2, #ff4242);
-    background-image: -moz-linear-gradient(top, #bb0306d2, #ff4242);
-    background-image: -ms-linear-gradient(top, #bb0306d2, #ff4242);
-    background-image: -o-linear-gradient(top, #bb0306d2, #ff4242);
-    background-image: linear-gradient(to bottom, #bb0306d2, #ff4242);
-    -webkit-border-radius: 15;
-    -moz-border-radius: 15;
-    border-radius: 15px;
-    text-shadow: 2px 2px 4px #1f1e1f;
-    -webkit-box-shadow: 3px 3px 10px #a6a6a6;
-    -moz-box-shadow: 3px 3px 10px #a6a6a6;
-    box-shadow: 3px 3px 10px #a6a6a6;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 22px;
-    padding: 10px 20px 10px 20px;
-    width: 15vw!important;
-    text-decoration: none;
-  }
-  
-  .topButton:hover {
-    background: #ff4242;
-    background-image: -webkit-linear-gradient(top, #ff4242, #bb0306d2);
-    background-image: -moz-linear-gradient(top, #ff4242, #bb0306d2);
-    background-image: -ms-linear-gradient(top, #ff4242, #bb0306d2);
-    background-image: -o-linear-gradient(top, #ff4242, #bb0306d2);
-    background-image: linear-gradient(to bottom, #ff4242, #bb0306d2);
-    text-decoration: none;
-  }
+  background: #bb0306d2;
+  background-image: -webkit-linear-gradient(top, #bb0306d2, #ff4242);
+  background-image: -moz-linear-gradient(top, #bb0306d2, #ff4242);
+  background-image: -ms-linear-gradient(top, #bb0306d2, #ff4242);
+  background-image: -o-linear-gradient(top, #bb0306d2, #ff4242);
+  background-image: linear-gradient(to bottom, #bb0306d2, #ff4242);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  text-shadow: 2px 2px 4px #1f1e1f;
+  -webkit-box-shadow: 3px 3px 10px #a6a6a6;
+  -moz-box-shadow: 3px 3px 10px #a6a6a6;
+  box-shadow: 3px 3px 10px #a6a6a6;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  width: 15vw !important;
+  text-decoration: none;
+}
 
-.future{
-    text-shadow: 0px 0px #000000!important;
+.topButton:hover {
+  background: #ff4242;
+  background-image: -webkit-linear-gradient(top, #ff4242, #bb0306d2);
+  background-image: -moz-linear-gradient(top, #ff4242, #bb0306d2);
+  background-image: -ms-linear-gradient(top, #ff4242, #bb0306d2);
+  background-image: -o-linear-gradient(top, #ff4242, #bb0306d2);
+  background-image: linear-gradient(to bottom, #ff4242, #bb0306d2);
+  text-decoration: none;
+}
+
+.future {
+  text-shadow: 0px 0px #000000 !important;
 }
 
 .banner {
-    background-attachment: fixed;
-    height: 75vh;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-attachment: fixed;
+  height: 75vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainText {
-    text-shadow: 4px 4px #000000;
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: bold;
+  text-shadow: 4px 4px #000000;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
 }
 
 .smallText {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Julius Sans One', sans-serif;
-    background-color: #00000091;
-    padding: 2.5vh 2.5vw;
-    border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Julius Sans One", sans-serif;
+  background-color: #00000091;
+  padding: 2.5vh 2.5vw;
+  border-radius: 10px;
 }
 
 .futureOfInfluencers .h1 {
-    padding: 5vh 10vw;
-    width: 100%;
+  padding: 5vh 10vw;
+  width: 100%;
 }
 
 .influencer {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .facts {
-    margin-top: 10vh;
-    width: 70vw;
-    margin: 7.5vh auto 0 auto;
-    font-family: 'Julius Sans One', sans-serif;
+  margin-top: 10vh;
+  width: 70vw;
+  margin: 7.5vh auto 0 auto;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .futureOfInfluencers p {
-    text-align: center;
-    font-size: 1.25rem;
-    padding: 1.25vh 0;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1.25vh 0;
 }
 
 .button {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    padding-bottom: 10vh;
-    justify-content: center!important;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10vh;
+  justify-content: center !important;
 }
 
 .button button {
-    text-align: center;
-    width: 15vw;
-    height: 10vh;
-    margin: 0 auto!important;
-    border: 0;
-    transition-duration: 0.5s;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  width: 15vw;
+  height: 10vh;
+  margin: 0 auto !important;
+  border: 0;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .button button:hover {
-    cursor: pointer;
-    background-color: rgba(95, 95, 95, 0.712);
+  cursor: pointer;
+  background-color: rgba(95, 95, 95, 0.712);
 }
 
 button a:link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 button a:visited {
-    color: black;
+  color: black;
 }
 
 button a:hover {
-    color: black;
+  color: black;
 }
 
 button a:active {
-    color: black;
+  color: black;
 }
 
 .bottomContainer {
-    padding-top: 10vh;
-    background-color: #FBDA61;
-    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  padding-top: 10vh;
+  color: white;
+  background: url(https://preview.colorlib.com/theme/videograph/img/team-bg.jpg)
+    no-repeat center center/cover;
 }
 
 .font {
-    font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .link-dark {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #bottom {
-    width: 75vw;
+  width: 75vw;
 }
 
 .col-xl-12 {
-    padding-bottom: 5vh;
+  padding-bottom: 5vh;
 }
 
 .col-xl-12 p {
-    text-align: center;
+  text-align: center;
 }
 
 .pollButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .btn-poll {
-    border: 0;
-    border-radius: 0;
-    padding: 2.5vh 2.5vw;
-    transition-duration: 0.5s;
-    font-family: 'Julius Sans One', sans-serif;
+  border: 0;
+  border-radius: 0;
+  padding: 2.5vh 2.5vw;
+  transition-duration: 0.5s;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .btn-poll:hover {
-    cursor: pointer;
-    background-color: rgba(201, 201, 201, 0.712);
+  cursor: pointer;
+  background-color: rgba(201, 201, 201, 0.712);
 }
 
 .brandLogo {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .brandPromo {
-    padding: 20vh 0;
-    width: 100vw!important;
-    background-image: linear-gradient(to bottom, #212529, #525458, #88898c, #c2c2c4, #ffffff);
+  padding: 20vh 0;
+  width: 100vw !important;
+  /* background-image: linear-gradient(
+    to bottom,
+    #0a0119,
+    #19053d,
+    #150233,
+    #17013a,
+    #1c0247
+  ); */
 }
 
 .whiteText {
-    color: white;
-    font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .brandImg {
-    width: 100%;
+  width: 100%;
 }
 
 .brandImgZee {
-    width: 60%;
+  width: 60%;
 }
 
 .brandImgTvc {
-    width: 60%;
+  width: 60%;
 }
 
 .flexForBrandImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
-    background-color: #212529;
+  background-color: #212529;
 }
 
 .priceRow {
-    width: 60vw!important;
-    margin: 0 auto!important;
-    font-family: 'Julius Sans One', sans-serif;
-    padding: 10vh 0 5vh 0;
+  width: 60vw !important;
+  margin: 0 auto !important;
+  font-family: "Julius Sans One", sans-serif;
+  padding: 10vh 0 5vh 0;
 }
 
 .whiteSpace {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .influencerBanner {
-    width: 40%;
-    align-self: flex-start;
+  width: 40%;
+  align-self: flex-start;
 }
 
 .greenText {
-    padding-right: 5%;
-    font-size: 2rem;
-    color: #3fb54f;
-    font-weight: bold;
+  padding-right: 5%;
+  font-size: 2rem;
+  color: #3fb54f;
+  font-weight: bold;
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .influencerBadgeImg {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .perks {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .card {
-    transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.033)
+  transform: scale(1.033);
 }
 
 .buttonn {
-    border-radius: 28px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.6s;
-    text-align: center;
-    width: 10vw;
-    height: 10vh;
-    margin: 5vh auto 10vh auto;
-    border: 0;
-    transition-duration: 0.5s;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Julius Sans One', sans-serif;
-    font-weight: bold;
-    background-color: #bb0306d2;
-    text-shadow: 1px 1px #000000;
-    color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.6s;
+  text-align: center;
+  width: 10vw;
+  height: 10vh;
+  margin: 5vh auto 10vh auto;
+  border: 0;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  background-color: #bb0306d2;
+  text-shadow: 1px 1px #000000;
+  color: white;
 }
 
 .buttonn:hover {
-    text-decoration: none;
-    transform: scale(1.07);
-    background-color: grey;
+  text-decoration: none;
+  transform: scale(1.07);
+  background-color: grey;
 }
 
 .buttonn:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }
 
 .hiddenTable {
-    display: none;
-    width: 100vw!important;
-    margin-bottom: 0!important;
+  display: none;
+  width: 100vw !important;
+  margin-bottom: 0 !important;
 }
 
 .footer {
-    padding: 10vh 0 2vh 0;
+  padding: 10vh 0 2vh 0;
 }
 
 .container {
-    padding: 2vh 0;
+  padding: 2vh 0;
 }
 
 ion-icon:hover {
-    color: rgb(67, 67, 255);
-    cursor: pointer;
+  color: rgb(67, 67, 255);
+  cursor: pointer;
 }
 
 .supportContainer {
-    /* background-color:red; */
-    margin: 0 auto;
+  /* background-color:red; */
+  margin: 0 auto;
 }
 
 .copyright {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-.topButton{
-    width: 40vw!important;
+  .topButton {
+    width: 40vw !important;
     font-size: 1rem;
-}
+  }
 
-    .banner {
-        height: 90vh;
-    }
-    .influencer {
-        width: 100%;
-        height: 100%;
-    }
-    .facts {
-        width: 85vw;
-    }
-    .button button {
-        width: 60vw;
-        height: 12.5vh;
-    }
-    .btn-poll {
-        padding: 2.5vh 10vw
-    }
-    .mainText {
-        padding-top: 10vh;
-        font-size: 2.5rem;
-    }
-    .smallText {
-        font-size: 1rem;
-        padding: 0 2.5rem;
-    }
-    .bottomInfluencer {
-        padding-top: calc(var(--bs-gutter-x));
-    }
-    .priceRow {
-        width: 90vw!important;
-    }
-    .price {
-        font-size: 1rem;
-    }
-    .card {
-        transition: transform 0.75s;
-    }
-    .card:hover {
-        transform: scale(1.05);
-    }
-    .perks {
-        padding: 1rem;
-        display: none;
-    }
-    .card-body {
-        height: 0!important;
-        width: 0!important;
-        padding: 0!important;
-    }
-    hr {
-        padding: 0;
-        margin: 0!important;
-        display: none;
-    }
-    .card-footer-text {
-        font-size: 0.75em!important;
-        white-space: nowrap!important;
-    }
-    .strike {
-        font-size: 0.75rem;
-    }
-    .greenText {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    .hiddenTable {
-        display: block;
-    }
-    .buttonn {
-        width: 50vw;
-        height: 12.5vh;
-    }
-    .brandImg {
-        width: 100%!important;
-    }
-    .brandImgZee {
-        width: 40%;
-    }
-    .brandImgTvc {
-        width: 60%;
-    }
+  .banner {
+    height: 90vh;
+  }
+  .influencer {
+    width: 100%;
+    height: 100%;
+  }
+  .facts {
+    width: 85vw;
+  }
+  .button button {
+    width: 60vw;
+    height: 12.5vh;
+  }
+  .btn-poll {
+    padding: 2.5vh 10vw;
+  }
+  .mainText {
+    padding-top: 10vh;
+    font-size: 2.5rem;
+  }
+  .smallText {
+    font-size: 1rem;
+    padding: 0 2.5rem;
+  }
+  .bottomInfluencer {
+    padding-top: calc(var(--bs-gutter-x));
+  }
+  .priceRow {
+    width: 90vw !important;
+  }
+  .price {
+    font-size: 1rem;
+  }
+  .card {
+    transition: transform 0.75s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .perks {
+    padding: 1rem;
+    display: none;
+  }
+  .card-body {
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+  }
+  hr {
+    padding: 0;
+    margin: 0 !important;
+    display: none;
+  }
+  .card-footer-text {
+    font-size: 0.75em !important;
+    white-space: nowrap !important;
+  }
+  .strike {
+    font-size: 0.75rem;
+  }
+  .greenText {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .hiddenTable {
+    display: block;
+  }
+  .buttonn {
+    width: 50vw;
+    height: 12.5vh;
+  }
+  .brandImg {
+    width: 100% !important;
+  }
+  .brandImgZee {
+    width: 40%;
+  }
+  .brandImgTvc {
+    width: 60%;
+  }
 }
